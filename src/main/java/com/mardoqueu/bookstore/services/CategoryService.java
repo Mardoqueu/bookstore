@@ -1,5 +1,6 @@
 package com.mardoqueu.bookstore.services;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,5 +20,9 @@ public class CategoryService {
 		Optional<Category> obj = repository.findById(id);
 		return obj.orElseThrow(() -> new ObjectNotFoundException(
 				"Objeto não encontrado! " + id + ", Tipo: " + Category.class.getName()));
+	}
+	
+	public List<Category> findAll(){
+		return repository.findAll();
 	}
 }
