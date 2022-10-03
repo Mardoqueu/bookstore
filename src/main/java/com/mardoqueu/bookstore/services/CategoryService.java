@@ -27,7 +27,7 @@ public class CategoryService {
 		return repository.findAll();
 	}
 	
-	public Category Create(Category obj) {
+	public Category create(Category obj) {
 		obj.setId(null);
 		return repository.save(obj);
 	}
@@ -37,5 +37,11 @@ public class CategoryService {
 		obj.setName(objDto.getName());
 		obj.setDescription(objDto.getDescription());
 		return repository.save(obj);
+	}
+
+	public void delete(Integer id) {
+		findById(id);
+		repository.deleteById(id);
+		
 	}
 }
