@@ -25,4 +25,11 @@ public class BookService {
 	public List<Book> findAll(){
 		return repository.findAll();
 	}
+
+	public Book create(Book obj) {
+		obj.setId(null);
+		return repository.save(obj);
+	}
+
+
 }

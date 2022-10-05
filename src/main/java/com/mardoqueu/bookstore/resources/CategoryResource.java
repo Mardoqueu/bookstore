@@ -42,8 +42,7 @@ public class CategoryResource {
 	}
 	
 	@PostMapping
-	public ResponseEntity<Category> create(@RequestBody Category obj)
-	{
+	public ResponseEntity<Category> create(@RequestBody Category obj){
 		obj = service.create(obj);	
 		URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}").buildAndExpand(obj.getId()).toUri();
 		return ResponseEntity.created(uri).body(obj);
