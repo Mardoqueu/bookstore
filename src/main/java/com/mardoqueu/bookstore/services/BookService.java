@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mardoqueu.bookstore.domain.Book;
+import com.mardoqueu.bookstore.domain.Category;
+import com.mardoqueu.bookstore.dtos.BookDTO;
 import com.mardoqueu.bookstore.repositories.BookRepository;
 import com.mardoqueu.bookstore.services.exceptions.ObjectNotFoundException;
 
@@ -29,6 +31,15 @@ public class BookService {
 	public Book create(Book obj) {
 		obj.setId(null);
 		return repository.save(obj);
+	}
+
+	public Book update(Integer id, BookDTO objDto) {
+		Book obj = findById(id);		
+		obj.setTitle(objDto.getTitle());
+		obj.setName_author(objDto.getName_author());
+		obj.setText(objDto.getText());
+		return repository.save(obj);
+
 	}
 
 
