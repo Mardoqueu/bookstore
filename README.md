@@ -1,12 +1,27 @@
-# bookstore
-Curso: Spring Boot com Angular 10
+<h1 align="center">Welcome to bookstore 👋</h1>
+<p>
+  <a href="https://www.npmjs.com/package/bookstore" target="_blank">
+    <img alt="Version" src="https://img.shields.io/npm/v/bookstore.svg">
+  </a>
+  <a href="https://twitter.com/SousaMardoqueu" target="_blank">
+    <img alt="Twitter: SousaMardoqueu" src="https://img.shields.io/twitter/follow/SousaMardoqueu.svg?style=social" />
+  </a>
+</p>
 
-Instrutor: [Valdir Cezar](https://github.com/ValdirCezar/).
+> Projeto Web Fullstack completo com tecnologias como Spring Boot, Angular 10 e 11, Heroku, JPA, Git, Github
 
-A estrutura de camadas do sistema será conforme mostrado a seguir:
+## Author
 
+👤 **Mardoqueu Sousa**
 
-1) Fazer uma implementação padrão do seguinte modelo conceitual:
+* Website: https://react-portfolio-website-indol.vercel.app/
+* Twitter: [@SousaMardoqueu](https://twitter.com/SousaMardoqueu)
+* Github: [@mardoqueu](https://github.com/mardoqueu)
+* LinkedIn: [@mardoqueu-sousa](https://linkedin.com/in/mardoqueu-sousa)
 
-![image](https://user-images.githubusercontent.com/11077068/193416087-4d2c6bf3-dc61-43af-ba52-486c6a1bab65.png)
+## Show your support
 
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
