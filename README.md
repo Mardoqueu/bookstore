@@ -19,9 +19,35 @@
 * Github: [@mardoqueu](https://github.com/mardoqueu)
 * LinkedIn: [@mardoqueu-sousa](https://linkedin.com/in/mardoqueu-sousa)
 
+## Descrição
+
+
+* Instação e configurar as ferramentas corretas para iniciar um projeto Web Fullstack
+* Conceitos de Spring Boot 2.x.x
+* Versionamento de código com Git Bash e Github
+* Criação de uma API REST
+* Utilização do banco de dados h2 em tempo de compilação
+* Utilização de SQL em modo de desenvolvimento
+
+## VISÃO TÉCNICA - BACK END:
+
+* Criação uma API Rest usando Java com Spring Boot 2.x.x e banco de dados MySQL.
+* Utilização JPA com Hibernate para mapeamento objeto-relacional e implantação na nuvem usando a plataforma Heroku.
+* Versionar seu código com Git Bash e Github
+* Validação de dados, tratamento de exceções, uso adequado do protocolo HTTP no padrão REST
+
+![uml](https://user-images.githubusercontent.com/11077068/202911335-7ef127fa-2083-4ab9-8b96-11b095250320.png)
+
+
+## Instrutor
+
+👤 **Valdir Cezar**
+
+* Github: [@ValdirCezar](https://github.com/ValdirCezar)
+* LinkedIn: [@valdircezar](https://linkedin.com/in/valdircezar)
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
 ***
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
