@@ -3,6 +3,7 @@ package com.mardoqueu.bookstore.services;
 import com.mardoqueu.bookstore.domain.Book;
 import com.mardoqueu.bookstore.dtos.BookDTO;
 import com.mardoqueu.bookstore.repositories.BookRepository;
+import com.mardoqueu.bookstore.services.exceptions.ObjectNotFoundException;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
@@ -14,6 +15,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.mockito.ArgumentMatchers.anyInt;
 import static org.mockito.Mockito.when;
 
 @SpringBootTest
@@ -58,6 +60,18 @@ class BookServiceTest {
         assertEquals(AUTHOR, response.getName_author());
         assertEquals(TEXT, response.getText());
 
+    }
+
+    @Test
+    void whenFindByIdThenReturnObjectNotFoundException(){
+        when(repository.findById(anyInt())).thenThrow(new ObjectNotFoundException("Objeto não encontrado!"));
+
+        try{
+            bookService.findById(ID);
+        } catch (Exception ex) {
+            assertEquals(ObjectNotFoundException.class, ex.getClass());
+            assertEquals("Objeto não encontrado!", ex.getMessage());
+        }
     }
 
     @Test
