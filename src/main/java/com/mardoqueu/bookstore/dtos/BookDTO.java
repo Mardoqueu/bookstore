@@ -25,7 +25,10 @@ public class BookDTO implements Serializable {
 		this.text = obj.getText();
 	}
 
-	public Integer getId() {
+    public BookDTO(int i, String clean_code, String robert_martin, String lorem_inpsum) {
+    }
+
+    public Integer getId() {
 		return id;
 	}
 
