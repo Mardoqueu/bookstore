@@ -41,7 +41,7 @@ public class Book implements Serializable{
 	@JoinColumn(name = "category_id")
 	private Category category;
 
-	public Book() {
+	public Book(Integer id, String title, String name_author, String text) {
 		super();
 
 	}
