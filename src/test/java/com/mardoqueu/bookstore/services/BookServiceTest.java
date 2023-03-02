@@ -12,6 +12,7 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 
 
+import java.util.List;
 import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -25,6 +26,7 @@ class BookServiceTest {
     public static final String TITLE = "Clean code";
     public static final String AUTHOR = "Robert Martin";
     public static final String TEXT = "Lorem inpsum";
+    public static final int INDEX = 0;
     @InjectMocks
     private BookService bookService;
 
@@ -75,7 +77,19 @@ class BookServiceTest {
     }
 
     @Test
-    void findAll() {
+    void whenFindAllThenReturnAListOfBooks() {
+        when(repository.findAll()).thenReturn(List.of(book));
+
+        List<Book> response = bookService.findAll();
+
+        assertNotNull(response);
+        assertEquals(ID, response.size());
+        assertEquals(Book.class, response.get(INDEX).getClass());
+
+        assertEquals(ID, response.get(INDEX).getId());
+        assertEquals(TITLE, response.get(INDEX).getTitle());
+        assertEquals(AUTHOR, response.get(INDEX).getName_author());
+        assertEquals(TEXT, response.get(INDEX).getText());
     }
 
     @Test
