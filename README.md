@@ -17,7 +17,7 @@
 * Website: https://react-portfolio-website-indol.vercel.app/
 * Twitter: [@SousaMardoqueu](https://twitter.com/SousaMardoqueu)
 * Github: [@mardoqueu](https://github.com/mardoqueu)
-* LinkedIn: [@mardoqueu-sousa](https://linkedin.com/in/mardoqueu-sousa)
+
 
 ## Descrição
 
