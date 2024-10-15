@@ -39,13 +39,6 @@
 ![uml](https://user-images.githubusercontent.com/11077068/202911335-7ef127fa-2083-4ab9-8b96-11b095250320.png)
 
 
-## Instrutor
-
-👤 **Valdir Cezar**
-
-* Github: [@ValdirCezar](https://github.com/ValdirCezar)
-* LinkedIn: [@valdircezar](https://linkedin.com/in/valdircezar)
-
 ## Show your support
 
 Give a ⭐️ if this project helped you!
