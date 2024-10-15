@@ -8,7 +8,7 @@
   </a>
 </p>
 
-> Projeto Web Fullstack completo com tecnologias como Spring Boot, Angular 10 e 11, Heroku, JPA, Git, Github
+> Complete Fullstack Web project with technologies like Spring Boot, Angular 10 and 11, Heroku, JPA, Git, Github
 
 ## Author
 
@@ -19,22 +19,21 @@
 * Github: [@mardoqueu](https://github.com/mardoqueu)
 
 
-## Descrição
+## Description
 
+* Install and configure the correct tools to start a Fullstack Web project
+* Concepts of Spring Boot 2.x.x
+* Code versioning with Git Bash and Github
+* Creation of a REST API
+* Use of the h2 database during compilation
+* Use of SQL in development mode
 
-* Instação e configurar as ferramentas corretas para iniciar um projeto Web Fullstack
-* Conceitos de Spring Boot 2.x.x
-* Versionamento de código com Git Bash e Github
-* Criação de uma API REST
-* Utilização do banco de dados h2 em tempo de compilação
-* Utilização de SQL em modo de desenvolvimento
+## TECHNICAL OVERVIEW - BACK END:
 
-## VISÃO TÉCNICA - BACK END:
-
-* Criação uma API Rest usando Java com Spring Boot 2.x.x e banco de dados MySQL.
-* Utilização JPA com Hibernate para mapeamento objeto-relacional e implantação na nuvem usando a plataforma Heroku.
-* Versionar seu código com Git Bash e Github
-* Validação de dados, tratamento de exceções, uso adequado do protocolo HTTP no padrão REST
+* Creation of a REST API using Java with Spring Boot 2.x.x and MySQL database.
+* Use of JPA with Hibernate for object-relational mapping and deployment in the cloud using the Heroku platform.
+* Version your code with Git Bash and Github
+* Data validation, exception handling, proper use of the HTTP protocol in REST standard
 
 ![uml](https://user-images.githubusercontent.com/11077068/202911335-7ef127fa-2083-4ab9-8b96-11b095250320.png)
 
